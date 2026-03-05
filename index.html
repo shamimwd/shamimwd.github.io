@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>শামীম আহসান | IT Professional</title>
+  <meta name="description" content="Shamim Ahsan - IT Professional, Communication Technician (BGB), Web & Graphics Designer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Noto+Serif+Bengali:wght@300;400;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+
+  <div class="noise-overlay"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#hero" class="logo-text">SA</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#about"      class="nav-link" data-bn="সম্পর্কে"  data-en="About">সম্পর্কে</a>
+        <a href="#skills"     class="nav-link" data-bn="দক্ষতা"    data-en="Skills">দক্ষতা</a>
+        <a href="#projects"   class="nav-link" data-bn="প্রজেক্ট"  data-en="Projects">প্রজেক্ট</a>
+        <a href="#experience" class="nav-link" data-bn="কর্মজীবন" data-en="Experience">কর্মজীবন</a>
+        <a href="#education"  class="nav-link" data-bn="শিক্ষা"    data-en="Education">শিক্ষা</a>
+        <a href="#contact"    class="nav-link" data-bn="যোগাযোগ"  data-en="Contact">যোগাযোগ</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <button id="langToggle" class="lang-btn" aria-label="Toggle Language"><span id="langLabel">EN</span></button>
+        <button id="menuBtn" class="md:hidden hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu hidden md:hidden">
+      <a href="#about"      class="mobile-nav-link" data-bn="সম্পর্কে"  data-en="About">সম্পর্কে</a>
+      <a href="#skills"     class="mobile-nav-link" data-bn="দক্ষতা"    data-en="Skills">দক্ষতা</a>
+      <a href="#projects"   class="mobile-nav-link" data-bn="প্রজেক্ট"  data-en="Projects">প্রজেক্ট</a>
+      <a href="#experience" class="mobile-nav-link" data-bn="কর্মজীবন" data-en="Experience">কর্মজীবন</a>
+      <a href="#education"  class="mobile-nav-link" data-bn="শিক্ষা"    data-en="Education">শিক্ষা</a>
+      <a href="#contact"    class="mobile-nav-link" data-bn="যোগাযোগ"  data-en="Contact">যোগাযোগ</a>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero" class="hero-section relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="hero-bg absolute inset-0">
+      <img src="bg.jpg" alt="Background" class="w-full h-full object-cover opacity-30" />
+      <div class="hero-gradient absolute inset-0"></div>
+    </div>
+    <div class="hero-grid-lines absolute inset-0 pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div class="flex flex-col lg:flex-row items-center gap-14 lg:gap-24">
+
+        <!-- Profile -->
+        <div class="profile-wrapper flex-shrink-0">
+          <div class="profile-outer-ring">
+            <div class="profile-ring">
+              <img src="profile.png" alt="শামীম আহসান" class="profile-img" />
+            </div>
+          </div>
+          <div class="profile-badge online">
+            <span class="badge-dot"></span>
+            <span data-bn="অনলাইন" data-en="Online">অনলাইন</span>
+          </div>
+          <div class="profile-stats">
+            <div class="profile-stat">
+              <span class="stat-num">৭+</span>
+              <span class="stat-label" data-bn="বছর" data-en="Yrs">বছর</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="profile-stat">
+              <span class="stat-num">BSc</span>
+              <span class="stat-label">CSE</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="profile-stat">
+              <span class="stat-num">BGB</span>
+              <span class="stat-label" data-bn="কর্মরত" data-en="Active">কর্মরত</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="hero-text text-center lg:text-left">
+          <h1 class="hero-name hero-name--large" data-bn="শামীম আহসান" data-en="Shamim Ahsan">শামীম আহসান</h1>
+          <div class="title-bar mt-5 mb-6">
+            <span class="title-item" data-bn="আইটি প্রফেশনাল"               data-en="IT Professional">আইটি প্রফেশনাল</span>
+            <span class="title-dot"></span>
+            <span class="title-item" data-bn="কমিউনিকেশন টেকনিশিয়ান (BGB)" data-en="Communication Technician (BGB)">কমিউনিকেশন টেকনিশিয়ান (BGB)</span>
+            <span class="title-dot"></span>
+            <span class="title-item" data-bn="ওয়েব ও গ্রাফিক্স ডিজাইনার"   data-en="Web & Graphics Designer">ওয়েব ও গ্রাফিক্স ডিজাইনার</span>
+          </div>
+          <p class="hero-bio max-w-xl"
+             data-bn="নতুন টেকনোলজি শিখতে এবং তা অন্যদের শেখাতে আমি ভালোবাসি। প্রোগ্রামিং, সফটওয়্যার ডিজাইন ও ডেভেলপমেন্ট আমার প্রধান আগ্রহের জায়গা।"
+             data-en="I love learning new technology and teaching it to others. Programming, software design and development are my primary areas of interest.">
+            নতুন টেকনোলজি শিখতে এবং তা অন্যদের শেখাতে আমি ভালোবাসি। প্রোগ্রামিং, সফটওয়্যার ডিজাইন ও ডেভেলপমেন্ট আমার প্রধান আগ্রহের জায়গা।
+          </p>
+          <div class="hero-ctas mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
+            <a href="#contact"  class="btn-primary" data-bn="যোগাযোগ করুন"   data-en="Contact Me">যোগাযোগ করুন</a>
+            <a href="#projects" class="btn-outline"  data-bn="প্রজেক্ট দেখুন" data-en="View Projects">প্রজেক্ট দেখুন</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator absolute bottom-8 left-1/2 -translate-x-1/2">
+      <div class="scroll-line"></div>
+      <div class="scroll-label" data-bn="স্ক্রল করুন" data-en="scroll">স্ক্রল করুন</div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="py-28 px-6 relative overflow-hidden">
+    <div class="section-bg-dots"></div>
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="section-header mb-16">
+        <span class="section-number">01</span>
+        <h2 class="section-title" data-bn="আমার সম্পর্কে" data-en="About Me">আমার সম্পর্কে</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="about-card" data-delay="0">
+          <div class="about-card-accent"></div>
+          <div class="about-icon">🎓</div>
+          <h3 data-bn="শিক্ষাগত যোগ্যতা" data-en="Academic Background">শিক্ষাগত যোগ্যতা</h3>
+          <p data-bn="বিএসসি ইন সিএসই — ইউরোপিয়ান ইউনিভার্সিটি অব বাংলাদেশ। ডিপ্লোমা ইন কম্পিউটার টেকনোলজি — ঠাকুরগাঁও পলিটেকনিক।"
+             data-en="BSc in CSE — European University of Bangladesh. Diploma in Computer Technology — Thakurgaon Polytechnic.">
+            বিএসসি ইন সিএসই — ইউরোপিয়ান ইউনিভার্সিটি অব বাংলাদেশ। ডিপ্লোমা ইন কম্পিউটার টেকনোলজি — ঠাকুরগাঁও পলিটেকনিক।
+          </p>
+        </div>
+
+        <div class="about-card" data-delay="120">
+          <div class="about-card-accent"></div>
+          <div class="about-icon">🛡️</div>
+          <h3 data-bn="পেশাগত অভিজ্ঞতা" data-en="Professional Experience">পেশাগত অভিজ্ঞতা</h3>
+          <p data-bn="বর্তমানে বর্ডার গার্ড বাংলাদেশ (BGB)-তে কমিউনিকেশন টেকনিশিয়ান হিসেবে কর্মরত। ৭+ বছরের বৈচিত্র্যময় আইটি অভিজ্ঞতা।"
+             data-en="Currently serving as Communication Technician at Border Guard Bangladesh (BGB). 7+ years of diverse IT experience.">
+            বর্তমানে বর্ডার গার্ড বাংলাদেশ (BGB)-তে কমিউনিকেশন টেকনিশিয়ান হিসেবে কর্মরত। ৭+ বছরের বৈচিত্র্যময় আইটি অভিজ্ঞতা।
+          </p>
+        </div>
+
+        <div class="about-card" data-delay="240">
+          <div class="about-card-accent"></div>
+          <div class="about-icon">🕌</div>
+          <h3 data-bn="বিশেষ অর্জন" data-en="Special Achievement">বিশেষ অর্জন</h3>
+          <p data-bn="২০০৭ সালে পবিত্র কোরআনের হেফজ সম্পন্ন করে পাগড়ী গ্রহণ। ধর্মীয় মূল্যবোধ ও আধুনিক প্রযুক্তির সমন্বয়ে জীবন গঠন।"
+             data-en="Completed Hifz of the Holy Quran in 2007 and received Pagri. Building life combining religious values and modern technology.">
+            ২০০৭ সালে পবিত্র কোরআনের হেফজ সম্পন্ন করে পাগড়ী গ্রহণ। ধর্মীয় মূল্যবোধ ও আধুনিক প্রযুক্তির সমন্বয়ে জীবন গঠন।
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills" class="py-28 px-6 relative bg-zinc-950">
+    <div class="max-w-7xl mx-auto">
+      <div class="section-header mb-16">
+        <span class="section-number">02</span>
+        <h2 class="section-title" data-bn="দক্ষতা" data-en="Skills">দক্ষতা</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-cat-header"><span class="skill-cat-icon">🌐</span>
+            <h3 data-bn="ওয়েব ডেভেলপমেন্ট" data-en="Web Development">ওয়েব ডেভেলপমেন্ট</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span><span class="skill-tag">PHP</span><span class="skill-tag">MySQL</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>HTML / CSS</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+            <div class="skill-bar-item"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+            <div class="skill-bar-item"><span>PHP / MySQL</span><div class="skill-bar"><div class="skill-fill" data-width="55"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header"><span class="skill-cat-icon">🎨</span>
+            <h3 data-bn="গ্রাফিক্স ডিজাইন" data-en="Graphics Design">গ্রাফিক্স ডিজাইন</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag">Adobe Photoshop</span><span class="skill-tag">Adobe Illustrator</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>Photoshop</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-bar-item"><span>Illustrator</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header"><span class="skill-cat-icon">📊</span>
+            <h3 data-bn="অফিস সফটওয়্যার" data-en="Office Software">অফিস সফটওয়্যার</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag">MS Word</span><span class="skill-tag">MS Excel</span><span class="skill-tag">PowerPoint</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>Word / Excel</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+            <div class="skill-bar-item"><span>PowerPoint</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header"><span class="skill-cat-icon">🔧</span>
+            <h3 data-bn="আইটি সাপোর্ট" data-en="IT Support">আইটি সাপোর্ট</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-bn="হার্ডওয়্যার" data-en="Hardware">হার্ডওয়্যার</span>
+            <span class="skill-tag" data-bn="সফটওয়্যার" data-en="Software">সফটওয়্যার</span>
+            <span class="skill-tag" data-bn="নেটওয়ার্কিং" data-en="Networking">নেটওয়ার্কিং</span>
+            <span class="skill-tag">AI Tools</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span data-bn="হার্ডওয়্যার" data-en="Hardware">হার্ডওয়্যার ট্রাবলশুটিং</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
+            <div class="skill-bar-item"><span data-bn="বেসিক নেটওয়ার্কিং" data-en="Networking">বেসিক নেটওয়ার্কিং</span><div class="skill-bar"><div class="skill-fill" data-width="68"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects" class="py-28 px-6 relative overflow-hidden">
+    <div class="section-bg-dots"></div>
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="section-header mb-16">
+        <span class="section-number">03</span>
+        <h2 class="section-title" data-bn="প্রজেক্টসমূহ" data-en="Projects">প্রজেক্টসমূহ</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- খরচপাতি -->
+        <div class="project-card featured" data-aos="fade-up">
+          <div class="project-shimmer"></div>
+          <div class="project-top">
+            <div class="project-app-icon-wrap">💰</div>
+            <div class="project-badges-row">
+              <span class="proj-badge beta" data-bn="বেটা" data-en="Beta">বেটা</span>
+              <span class="proj-badge android">Android</span>
+            </div>
+          </div>
+          <h3 class="project-name">খরচপাতি</h3>
+          <p class="project-tagline"
+             data-bn="দৈনন্দিন আয়-ব্যয়ের স্মার্ট হিসাব"
+             data-en="Smart daily income & expense tracker">
+            দৈনন্দিন আয়-ব্যয়ের স্মার্ট হিসাব
+          </p>
+          <p class="project-desc"
+             data-bn="খরচপাতি একটি বাংলাদেশি ব্যক্তিগত অর্থ ব্যবস্থাপনা অ্যাপ। দৈনন্দিন আয় ও ব্যয়ের সম্পূর্ণ হিসাব, ক্যাটাগরি অনুযায়ী বিশ্লেষণ এবং মাসিক রিপোর্ট তৈরি করা যায়। বর্তমানে আমি সহ কয়েকজন ব্যবহারকারী পরীক্ষামূলকভাবে ব্যবহার করছেন — শীঘ্রই Google Play Store-এ পাবলিশ হবে।"
+             data-en="Khorchpati is a Bangladeshi personal finance app. Track all daily income and expenses, categorize transactions, and generate monthly reports. Currently being tested by me and a few users — launching on Google Play Store soon.">
+            খরচপাতি একটি বাংলাদেশি ব্যক্তিগত অর্থ ব্যবস্থাপনা অ্যাপ। দৈনন্দিন আয় ও ব্যয়ের সম্পূর্ণ হিসাব, ক্যাটাগরি অনুযায়ী বিশ্লেষণ এবং মাসিক রিপোর্ট তৈরি করা যায়। বর্তমানে আমি সহ কয়েকজন ব্যবহারকারী পরীক্ষামূলকভাবে ব্যবহার করছেন — শীঘ্রই Google Play Store-এ পাবলিশ হবে।
+          </p>
+          <div class="project-features-grid">
+            <div class="pf-item"><span>📈</span><span data-bn="আয়-ব্যয় ট্র্যাকিং" data-en="Income & Expense Tracking">আয়-ব্যয় ট্র্যাকিং</span></div>
+            <div class="pf-item"><span>🗂️</span><span data-bn="ক্যাটাগরি বিশ্লেষণ" data-en="Category Analysis">ক্যাটাগরি বিশ্লেষণ</span></div>
+            <div class="pf-item"><span>📅</span><span data-bn="মাসিক রিপোর্ট" data-en="Monthly Report">মাসিক রিপোর্ট</span></div>
+            <div class="pf-item"><span>🌙</span><span data-bn="ডার্ক মোড" data-en="Dark Mode">ডার্ক মোড</span></div>
+          </div>
+          <div class="project-tech-row">
+            <span class="tech-chip">Android</span>
+            <span class="tech-chip">Java</span>
+            <span class="tech-chip">SQLite</span>
+          </div>
+          <div class="project-status-bar">
+            <div class="project-status-left">
+              <span class="live-dot"></span>
+              <span data-bn="পরীক্ষামূলক ব্যবহার চলছে" data-en="Testing in Progress">পরীক্ষামূলক ব্যবহার চলছে</span>
+            </div>
+            <span class="coming-soon-tag" data-bn="Play Store — শীঘ্রই" data-en="Play Store — Coming Soon">Play Store — শীঘ্রই</span>
+          </div>
+        </div>
+
+        <!-- Upcoming -->
+        <div class="project-card upcoming" data-aos="fade-up">
+          <div class="upcoming-inner">
+            <div class="upcoming-icon">🚀</div>
+            <h3 data-bn="আরও প্রজেক্ট আসছে..." data-en="More Coming...">আরও প্রজেক্ট আসছে...</h3>
+            <p data-bn="নতুন আইডিয়া ও প্রজেক্টে কাজ চলছে। শীঘ্রই এখানে যোগ হবে।"
+               data-en="Working on new ideas and projects. Will be added here soon.">
+              নতুন আইডিয়া ও প্রজেক্টে কাজ চলছে। শীঘ্রই এখানে যোগ হবে।
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience" class="py-28 px-6 relative bg-zinc-950">
+    <div class="max-w-5xl mx-auto">
+      <div class="section-header mb-16">
+        <span class="section-number">04</span>
+        <h2 class="section-title" data-bn="কর্মজীবন" data-en="Experience">কর্মজীবন</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot current"></div>
+          <div class="timeline-content">
+            <div class="current-badge" data-bn="২০২৩ — বর্তমান" data-en="2023 — Present">২০২৩ — বর্তমান</div>
+            <h3 class="timeline-role" data-bn="কমিউনিকেশন টেকনিশিয়ান" data-en="Communication Technician">কমিউনিকেশন টেকনিশিয়ান</h3>
+            <p class="timeline-org"  data-bn="বর্ডার গার্ড বাংলাদেশ (BGB)" data-en="Border Guard Bangladesh (BGB)">বর্ডার গার্ড বাংলাদেশ (BGB)</p>
+            <p class="timeline-desc" data-bn="সামরিক যোগাযোগ ব্যবস্থা পরিচালনা ও রক্ষণাবেক্ষণ।" data-en="Operation and maintenance of military communication systems.">সামরিক যোগাযোগ ব্যবস্থা পরিচালনা ও রক্ষণাবেক্ষণ।</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date" data-bn="২০২২ — ২০২৩" data-en="2022 — 2023">২০২২ — ২০২৩</div>
+            <h3 class="timeline-role" data-bn="আইটি এক্সিকিউটিভ" data-en="IT Executive">আইটি এক্সিকিউটিভ</h3>
+            <p class="timeline-org"  data-bn="বেটার লাইফ হসপিটাল লিমিটেড, ঢাকা" data-en="Better Life Hospital Ltd., Dhaka">বেটার লাইফ হসপিটাল লিমিটেড, ঢাকা</p>
+            <p class="timeline-desc" data-bn="হাসপাতালের সামগ্রিক আইটি অবকাঠামো পরিচালনা ও রক্ষণাবেক্ষণ।" data-en="Management and maintenance of the hospital's overall IT infrastructure.">হাসপাতালের সামগ্রিক আইটি অবকাঠামো পরিচালনা ও রক্ষণাবেক্ষণ।</p>
+            <!-- উল্লেখযোগ্য ব্যক্তি: মোঃ শামসুদ্দোহা রাতুল -->
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date" data-bn="২০২১ — ২০২২" data-en="2021 — 2022">২০২১ — ২০২২</div>
+            <h3 class="timeline-role" data-bn="আইটি সেকশন" data-en="IT Section">আইটি সেকশন</h3>
+            <p class="timeline-org"  data-bn="আলোকিত শিশুকণ্ঠ পরিষদ" data-en="Alokito Shishukantho Parishad">আলোকিত শিশুকণ্ঠ পরিষদ</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date" data-bn="২০১৯ — ২০২১" data-en="2019 — 2021">২০১৯ — ২০২১</div>
+            <h3 class="timeline-role" data-bn="আইটি অফিসার (প্রোডাকশন → প্রমোশন)" data-en="IT Officer (Production → Promoted)">আইটি অফিসার (প্রোডাকশন → প্রমোশন)</h3>
+            <p class="timeline-org"  data-bn="গার্মেন্টস ফ্যাক্টরি, গাজীপুর" data-en="Garments Factory, Gazipur">গার্মেন্টস ফ্যাক্টরি, গাজীপুর</p>
+            <p class="timeline-desc" data-bn="প্রোডাকশন বিভাগ থেকে শুরু করে আইটি অফিসার পদে পদোন্নতি।" data-en="Started from production department and was promoted to IT Officer.">প্রোডাকশন বিভাগ থেকে শুরু করে আইটি অফিসার পদে পদোন্নতি।</p>
+            <!-- উল্লেখযোগ্য ব্যক্তি: মোঃ সাইয়েদ রুহুল কুদ্দুস তরুণ -->
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date" data-bn="২০১৮ — ২০১৯" data-en="2018 — 2019">২০১৮ — ২০১৯</div>
+            <h3 class="timeline-role" data-bn="কম্পিউটার অপারেটর ও আইটি সাপোর্ট" data-en="Computer Operator & IT Support">কম্পিউটার অপারেটর ও আইটি সাপোর্ট</h3>
+            <p class="timeline-org"  data-bn="কম্পিউটার ফার্ম (মিরপুর ও বাড্ডা) | ইন্টেলিজেন্স ইমেজ ম্যানেজমেন্ট লিমিটেড" data-en="Computer Farm (Mirpur & Badda) | Intelligence Image Management Ltd.">কম্পিউটার ফার্ম (মিরপুর ও বাড্ডা) | ইন্টেলিজেন্স ইমেজ ম্যানেজমেন্ট লিমিটেড</p>
+            <!-- উল্লেখযোগ্য ব্যক্তি: সাঈদ -->
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date" data-bn="২০১৭" data-en="2017">২০১৭</div>
+            <h3 class="timeline-role" data-bn="গ্রাফিক্স ডিজাইনার ও প্রশিক্ষক" data-en="Graphics Designer & Trainer">গ্রাফিক্স ডিজাইনার ও প্রশিক্ষক</h3>
+            <p class="timeline-org"  data-bn="ফাইবার মার্কেটপ্লেস | ইকো ইনস্টিটিউট অফ টেকনোলজি, ঠাকুরগাঁও" data-en="Fiverr Marketplace | Eco Institute of Technology, Thakurgaon">ফাইবার মার্কেটপ্লেস | ইকো ইনস্টিটিউট অফ টেকনোলজি, ঠাকুরগাঁও</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date" data-bn="পূর্বে" data-en="Earlier">পূর্বে</div>
+            <h3 class="timeline-role" data-bn="ডাটা এন্ট্রি ও কম্পিউটার প্রশিক্ষক" data-en="Data Entry & Computer Trainer">ডাটা এন্ট্রি ও কম্পিউটার প্রশিক্ষক</h3>
+            <p class="timeline-org"  data-bn="ডিস্ট্রিক্ট একাউন্টস অফিস, ঠাকুরগাঁও | বিসিই কম্পিউটার" data-en="District Accounts Office, Thakurgaon | BCE Computer">ডিস্ট্রিক্ট একাউন্টস অফিস, ঠাকুরগাঁও | বিসিই কম্পিউটার</p>
+            <!-- উল্লেখযোগ্য ব্যক্তি: মোঃ মিজানুর রহমান -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION ==================== -->
+  <section id="education" class="py-28 px-6 relative overflow-hidden">
+    <div class="section-bg-dots"></div>
+    <div class="max-w-5xl mx-auto relative z-10">
+      <div class="section-header mb-16">
+        <span class="section-number">05</span>
+        <h2 class="section-title" data-bn="শিক্ষাজীবন" data-en="Education">শিক্ষাজীবন</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline edu-timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot edu"></div>
+          <div class="timeline-content">
+            <div class="timeline-date" data-bn="২০১৮ — ২০২২" data-en="2018 — 2022">২০১৮ — ২০২২</div>
+            <h3 class="timeline-role" data-bn="বিএসসি ইন সিএসই" data-en="BSc in CSE">বিএসসি ইন সিএসই</h3>
+            <p class="timeline-org"  data-bn="ইউরোপিয়ান ইউনিভার্সিটি অব বাংলাদেশ, ঢাকা" data-en="European University of Bangladesh, Dhaka">ইউরোপিয়ান ইউনিভার্সিটি অব বাংলাদেশ, ঢাকা</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot edu"></div>
+          <div class="timeline-content">
+            <div class="timeline-date" data-bn="২০১৩ — ২০১৭" data-en="2013 — 2017">২০১৩ — ২০১৭</div>
+            <h3 class="timeline-role" data-bn="ডিপ্লোমা ইন কম্পিউটার টেকনোলজি" data-en="Diploma in Computer Technology">ডিপ্লোমা ইন কম্পিউটার টেকনোলজি</h3>
+            <p class="timeline-org"  data-bn="ঠাকুরগাঁও পলিটেকনিক ইনস্টিটিউট" data-en="Thakurgaon Polytechnic Institute">ঠাকুরগাঁও পলিটেকনিক ইনস্টিটিউট</p>
+            <p class="timeline-desc" data-bn="পাশাপাশি ইলেকট্রিক্যাল হাউজ ওয়্যারিং কোর্স — মিনাল কম্পিউটার ট্রেনিং একাডেমী।" data-en="Also completed Electrical House Wiring Course — Minal Computer Training Academy.">পাশাপাশি ইলেকট্রিক্যাল হাউজ ওয়্যারিং কোর্স — মিনাল কম্পিউটার ট্রেনিং একাডেমী।</p>
+            <!-- পলিটেকনিক স্মৃতি: শিক্ষক রমজান আলী, হেলাল উদ্দিন। বন্ধু রাসেল। -->
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot edu"></div>
+          <div class="timeline-content">
+            <div class="timeline-date" data-bn="২০১৩" data-en="2013">২০১৩</div>
+            <h3 class="timeline-role" data-bn="দাখিল — বিজ্ঞান বিভাগ" data-en="Dakhil — Science">দাখিল — বিজ্ঞান বিভাগ</h3>
+            <p class="timeline-org"  data-bn="উমানন্দ আদর্শ দাখিল মাদ্রাসা ও জুম্মাহাট দারুল উলুম ডিগ্রী ফাজিল মাদ্রাসা" data-en="Umananda Adarsha Dakhil Madrasa & Jummahat Darul Ulum Degree Fazil Madrasa">উমানন্দ আদর্শ দাখিল মাদ্রাসা ও জুম্মাহাট দারুল উলুম ডিগ্রী ফাজিল মাদ্রাসা</p>
+            <!-- জুম্মাহাট মাদ্রাসা: ২০১০ সালে ট্যালেন্টপুল বৃত্তি। শিক্ষক: আনিসুর স্যার। বন্ধু: ইউসুফ, তারেক, নুননবি, নাদিম। উমানন্দ: শিক্ষক চাদ মিয়া, মাওলানা আব্দুর রহিম, রুমি। বন্ধু: লিমন, মাসুদ, জুই। -->
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot edu special"></div>
+          <div class="timeline-content special-edu">
+            <div class="timeline-date" data-bn="২০০৭" data-en="2007">২০০৭</div>
+            <h3 class="timeline-role" data-bn="🕌 কোরআনের হেফজ সম্পন্ন ও পাগড়ী গ্রহণ" data-en="🕌 Completed Hifz of Quran & Received Pagri">🕌 কোরআনের হেফজ সম্পন্ন ও পাগড়ী গ্রহণ</h3>
+            <p class="timeline-org"  data-bn="তবকপুর বামনের হাট তেজারতিয়া নুরানী হাফেজীয়া মাদ্রাসা" data-en="Tabakpur Bamoner Hat Tejaratia Noorani Hafeziya Madrasa">তবকপুর বামনের হাট তেজারতিয়া নুরানী হাফেজীয়া মাদ্রাসা</p>
+            <!-- স্মৃতি: প্রথম ৪ বছর, সাথে আবু রায়হান, রাশেদুল, মাইদুল। শিক্ষক: মাওলানা জোবায়ের, হাফেজ ফয়জার। ২ বছর নানার বাড়িতে আবাসিক। উলিপুর মসজিদুল হুদা (২০০৫): শিক্ষক হাফেজ হোসাইন, তোফাজ্জল। বন্ধু সামিউল। -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="py-28 px-6 relative bg-zinc-950">
+    <div class="max-w-5xl mx-auto">
+      <div class="section-header mb-16">
+        <span class="section-number">06</span>
+        <h2 class="section-title" data-bn="যোগাযোগ" data-en="Contact">যোগাযোগ</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-intro">
+          <h3 class="contact-heading" data-bn="কথা বলুন আমার সাথে" data-en="Let's Talk">কথা বলুন আমার সাথে</h3>
+          <p data-bn="যেকোনো আইটি বিষয়ে পরামর্শ, প্রজেক্ট বা সহযোগিতার জন্য নির্দ্বিধায় যোগাযোগ করুন।"
+             data-en="Feel free to contact me for any IT consultation, project, or collaboration.">
+            যেকোনো আইটি বিষয়ে পরামর্শ, প্রজেক্ট বা সহযোগিতার জন্য নির্দ্বিধায় যোগাযোগ করুন।
+          </p>
+          <div class="contact-deco"></div>
+        </div>
+        <div class="contact-cards">
+          <a href="tel:+8801734136520" class="contact-card">
+            <div class="contact-icon">📱</div>
+            <div class="contact-info">
+              <div class="contact-label" data-bn="মোবাইল / WhatsApp" data-en="Mobile / WhatsApp">মোবাইল / WhatsApp</div>
+              <div class="contact-value">01734136520</div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="mailto:igl.shamim@gmail.com" class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-info">
+              <div class="contact-label" data-bn="ইমেইল" data-en="Email">ইমেইল</div>
+              <div class="contact-value">igl.shamim@gmail.com</div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a href="https://facebook.com/shamim.wd" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon">🔵</div>
+            <div class="contact-info">
+              <div class="contact-label" data-bn="ফেসবুক" data-en="Facebook">ফেসবুক</div>
+              <div class="contact-value">facebook.com/shamim.wd</div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer-main py-10 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="footer-logo">SA</div>
+      <p class="footer-copy">
+        <span data-bn="© ২০২৬ শামীম আহসান। সর্বস্বত্ব সংরক্ষিত।" data-en="© 2026 Shamim Ahsan. All Rights Reserved.">© ২০২৬ শামীম আহসান। সর্বস্বত্ব সংরক্ষিত।</span>
+      </p>
+      <a href="#hero" class="footer-top-link" data-bn="উপরে যান ↑" data-en="Back to Top ↑">উপরে যান ↑</a>
+    </div>
+  </footer>
+
+  <!--
+  ============================================================
+  🔒 ব্যক্তিগত স্মৃতি ও সংবেদনশীল তথ্য (ব্যক্তিগত রেকর্ড)
+  ============================================================
+  জন্ম: ০৫ অক্টোবর ১৯৯৪, বুধবার
+  জন্মস্থান: পুরির পটল গ্রাম, তবকপুর ইউনিয়ন, উলিপুর, কুড়িগ্রাম।
+  প্রথম শিক্ষা: ৪-৫ বছর বয়সে ক্বারিপাড়া গ্রামে মক্তবে।
+  মাদ্রাসা: বামনের হাট তেজারতিয়া — শিক্ষক মাওলানা জোবায়ের, হাফেজ ফয়জার।
+  সাথে যেতেন: আবু রায়হান, রাশেদুল, মাইদুল। ২ বছর নানার বাড়িতে আবাসিক।
+  উলিপুর (২০০৫): শিক্ষক হাফেজ হোসাইন, তোফাজ্জল। বন্ধু সামিউল।
+  উমানন্দ: শিক্ষক চাদ মিয়া, আব্দুর রহিম, রুমি। বন্ধু লিমন, মাসুদ, জুই।
+  জুম্মাহাট (২০০৯): ২০১০ ট্যালেন্টপুল বৃত্তি। শিক্ষক আনিসুর। বন্ধু ইউসুফ, তারেক, নুননবি, নাদিম।
+  পলিটেকনিক: শিক্ষক রমজান আলী, হেলাল উদ্দিন। বন্ধু রাসেল।
+  ============================================================
+  -->
+
+  <script src="script.js"></script>
+</body>
+</html>
